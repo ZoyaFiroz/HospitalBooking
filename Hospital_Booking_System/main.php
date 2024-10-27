@@ -63,7 +63,7 @@
             <p>Explore a world of information and resources. Our platform is designed to provide you with the best experience, from navigating through content to finding the information you need. Join us on this journey and discover what we have to offer!</p>
         </div>
         <div class="image-container">
-            <img src="images/img.jpg" alt="Centered Image" class="center-image">
+            <img src="images/intro_ani.jpg" alt="Centered Image" class="center-image">
         </div>
     </div>
     <li class="card_list">
