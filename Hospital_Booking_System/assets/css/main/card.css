@@ -1,0 +1,76 @@
+/* Card Container */
+.card-container {
+    display: flex; /* Align cards horizontally */
+    gap: 1.5rem; /* Space between cards */
+    padding: 1rem; /* Add padding around the container */
+    justify-content: center; /* Center cards horizontally */
+    list-style: none; /* Remove list bullets */
+    margin: 0;
+}
+
+/* Card Link */
+.card-link {
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit text color */
+    display: block; /* Ensure the link wraps the entire card */
+    transition: transform 0.3s ease-out; /* Smooth hover effect */
+}
+
+/* Card Styling */
+.card {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    background: rgb(72, 72, 170);
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+    overflow: visible;
+    cursor: pointer; /* Show pointer cursor for clickable cards */
+}
+
+.card-details {
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: x-large;
+    height: 100%;
+    gap: 0.5em;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+/* Card Button */
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(161, 161, 255);
+    color: #fff;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+/* Card Hover Effects */
+.card:hover {
+    border-color: rgb(72, 72, 170);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* Card Link Hover */
+.card-link:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
